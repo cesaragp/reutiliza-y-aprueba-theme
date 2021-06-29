@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link id="template-file" href="../Files/css/rya-header.css" rel="stylesheet" />
+    <link id="template-file" href="../Files/css/rya-contact.css" rel="stylesheet" />
+
+</head>
+<body>
+	<header id="header">
+	    <div class="headerContainer">
+	        <div class="headerTop">
+	            <div class="headerLogo">
+	                <a href="../Home.html">
+	                    <img src="../Files/images/logo.png" />
+	                </a>
+	            </div>
+	            <div class=headerSearch>
+	                <input type="text" name="search" placeholder="Buscar...">
+	            </div>
+	            <div class="headerLinks">
+	                <div class="headerContact">
+	                    <div class="headerLinkImg"><img src="../Files/images/contacto.png"/></div>
+	                    <div class="headerLinkText">Contacto</div>
+	                </div>
+	                <div class="headerAccount">
+	                    <div class="headerLinkImg"><img src="../Files/images/cuenta.png"/></div>
+	                    <div class="headerLinkText">Mi Cuenta</div>
+	                </div>
+	                <div class="headerCart">
+	                    <div class="headerLinkImg"><img src="../Files/images/carrito-de-compras.png"/></div>
+	                    <div class="headerLinkText">Mi Carrito</div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="headerBottom">
+	            <div>Categorías</div>
+	            <div>Ofertas</div>
+	            <div>¿Quienes Somos?</div>
+	        </div>
+	    </div>
+	</header>
+
+	<section class="contact">
+        <h2>Gracias por ponerte en contacto, llena el formulario y te contestaremos a la brevedad.</h2>
+        <div class="container_inputs">
+            <h4>Ingresa tus datos</h4>
+            <div class="inputcontainer">
+                <span>Nombre y apellido*</span>
+                <input type="text" id="contact_nombre" minlength="5" alt="Nombre y apellido"/>
+            </div>
+            <div class="inputcontainer">
+                <span>Correo electrónico*</span>
+                <input type="text" id="contact_email" minlength="5" alt="Correo electrónico"/>
+            </div>
+
+            <div class="inputcontainer">
+                <span>Estado*</span>
+                <select name="estado" id="contact_estado" alt="Estado">
+                    <option value="">Seleccione</option>
+                    <option value="Aguascalientes">Aguascalientes</option>
+                    <option value="Baja California">Baja California</option>
+                    <option value="Baja California Sur">Baja California Sur</option>
+                    <option value="Campeche">Campeche</option>
+                    <option value="Ciudad de México">Ciudad de México</option>
+                    <option value="Coahuila de Zaragoza">Coahuila de Zaragoza</option>
+                    <option value="Colima">Colima</option>
+                    <option value="Chiapas">Chiapas</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Durango">Durango</option>
+                    <option value="Estado de México">Estado de México</option>
+                    <option value="Guanajuato">Guanajuato</option>
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Hidalgo">Hidalgo</option>
+                    <option value="Jalisco">Jalisco</option>
+                    <option value="Michoacán de Ocampo">Michoacán de Ocampo</option>
+                    <option value="Morelos">Morelos</option>
+                    <option value="Nayarit">Nayarit</option>
+                    <option value="Nuevo León">Nuevo León</option>
+                    <option value="Oaxaca">Oaxaca</option>
+                    <option value="Puebla">Puebla</option>
+                    <option value="Querétaro">Querétaro</option>
+                    <option value="Quintana Roo">Quintana Roo</option>
+                    <option value="San Luis Potosí">San Luis Potosí</option>
+                    <option value="Sinaloa">Sinaloa</option>
+                    <option value="Sonora">Sonora</option>
+                    <option value="Tabasco">Tabasco</option>
+                    <option value="Tamaulipas">Tamaulipas</option>
+                    <option value="Tlaxcala">Tlaxcala</option>
+                    <option value="Veracruz de Ignacio de la Llave">Veracruz de Ignacio de la Llave</option>
+                    <option value="Yucatán">Yucatán</option>
+                    <option value="Zacatecas">Zacatecas</option>
+                </select>
+            </div>
+            <div class="inputcontainer">
+                <span>Código postal*</span>
+                <input type="text" id="contact_cp" maxlength="5" minlength="5" alt="Código postal" />
+            </div>
+            <div class="inputcontainer">
+                <span>Teléfono*</span>
+                <input type="text" id="telefono_cp" maxlength="10" minlength="9" alt="Teléfono" />
+            </div>
+
+
+            <div class="inputcontainer areatext">
+                <span>Mensaje*</span>
+                <textarea id="contact_mensaje" rows="10" minlength="10" alt="Mensaje"></textarea>
+            </div>
+            <div class="inputcontainer checkbox">
+                <span>¿Cómo te podemos asistir?</span>
+                
+                <label for="Asistencia_tecnica">
+                    Asistencia técnica
+                    <input type="radio" name="contact_asistencia" value="Asistencia técnica" id="Asistencia_tecnica"  alt="Tipo asistencia"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label for="Aclaracion">
+                    Aclaración
+                    <input type="radio" name="contact_asistencia" value="Aclaración" id="Aclaracion"  alt="Tipo asistencia"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label for="Informacion">
+                    Información
+                    <input type="radio" name="contact_asistencia" value="Información" id="Informacion"  alt="Tipo asistencia"/>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <p class="bold">Campos obligatorios*</p>
+            <p>Este formulario solicita sus datos de contacto para que podamos responder a su consulta por correo electrónico. Eche un vistazo a nuestros términos de uso y política de privacidad para obtener una descripción detallada de cómo protegemos y administramos sus datos enviados.</p>
+            <input type="checkbox" name="contact_condiciones" id="condiciones" alt="Condiciones"/>
+            <label for="condiciones">Sí, he leído y entiendo la información sobre los datos personales y las <a href="/politicas/aviso-de-privacidad" target="_blank">condiciones de uso.</a></label>
+            <button class="button_principal">Enviar</button>
+        </div>
+    </section>
+
+
+
+    <script src="../Files/js/rya-contact.js"></script>
+</body>
+</html>
