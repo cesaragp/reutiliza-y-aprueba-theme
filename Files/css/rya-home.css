@@ -1,0 +1,37 @@
+.home-page-container{
+    overflow-x:hidden;
+}
+.section1 {
+    justify-content:space-between;
+    padding:0 10%;
+    margin:5% 0;
+}
+
+.container-left{
+    width:59%;
+}
+
+.container-right{
+    width:39%;
+}
+
+.container-left img{
+    width:100%;
+    height:100%;
+}
+
+.container-right img{
+     height:50%;
+}
+
+.section2, .section3, .section4, .section5{
+    margin:5% 0;
+}
+
+.section3 img, .section5 img{
+    width:100%;
+}
+
+.section2{
+    justify-content: center;
+}
