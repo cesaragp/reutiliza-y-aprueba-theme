@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link id="template-file" href="../Files/css/rya-header.css" rel="stylesheet" />
-    <link id="template-file" href="../Files/css/rya-contact.css" rel="stylesheet" />
+    <link id="template-file" href="Files/css/rya-header.css" rel="stylesheet" />
+	<link id="template-file" href="Files/css/rya-footer.css" rel="stylesheet" />
+	<link id="template-file" href="Files/css/rya-contact.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -14,8 +15,8 @@
 	    <div class="headerContainer">
 	        <div class="headerTop">
 	            <div class="headerLogo">
-	                <a href="../Home.html">
-	                    <img src="../Files/images/logo.png" />
+	                <a href="Home.html">
+	                    <img src="Files/images/logo1.png" />
 	                </a>
 	            </div>
 	            <div class=headerSearch>
@@ -23,27 +24,29 @@
 	            </div>
 	            <div class="headerLinks">
 	                <div class="headerContact">
-	                    <div class="headerLinkImg"><img src="../Files/images/contacto.png"/></div>
-	                    <div class="headerLinkText">Contacto</div>
+	                	<a href="Contacto.html">
+	                    	<div class="headerLinkImg"><img src="Files/images/contacto.png"/></div>
+	                    	<div class="headerLinkText">Contacto</div>
+	                    </a>
 	                </div>
 	                <div class="headerAccount">
-	                    <div class="headerLinkImg"><img src="../Files/images/cuenta.png"/></div>
+	                    <div class="headerLinkImg"><img src="Files/images/cuenta.png"/></div>
 	                    <div class="headerLinkText">Mi Cuenta</div>
 	                </div>
 	                <div class="headerCart">
-	                    <div class="headerLinkImg"><img src="../Files/images/carrito-de-compras.png"/></div>
+	                    <div class="headerLinkImg"><img src="Files/images/carrito-de-compras.png"/></div>
 	                    <div class="headerLinkText">Mi Carrito</div>
 	                </div>
 	            </div>
 	        </div>
 	        <div class="headerBottom">
-	            <div>Categorías</div>
-	            <div>Ofertas</div>
-	            <div>¿Quienes Somos?</div>
+	            <div><a href="#">Categorías</a></div>
+	            <div><a href="Ofertas.html">Ofertas</a></div>
+	            <div><a href="Quienes-somos.html">¿Quienes Somos?</a></div>
 	        </div>
 	    </div>
 	</header>
-
+	
 	<section class="contact">
         <h2>Gracias por ponerte en contacto, llena el formulario y te contestaremos a la brevedad.</h2>
         <div class="container_inputs">
@@ -135,9 +138,39 @@
             <button class="button_principal">Enviar</button>
         </div>
     </section>
+	
+	<footer>
+	  	<div class="footer" style="background-color:#DBDBDB; height:200px; display:flex">
+			<div class="left" style="display:flex">
+		  		<div class="left1">
+					<h2>Compañía</h2>
+					<p>Quienes somos</p>
+					<p>Blog</p>
+					<p>Afiliados</p>
+		  		</div>
+		  		<div class="left1">
+					<h2>Soporte</h2>
+					<p>Contacto</p>
+					<p>Devoluciones</p>
+					<p>Preguntas</p>
+		  		</div>
+			  	<div class="left1">
+					<h2>Tienda</h2>
+					<p>Novedades</p>
+					<p>Comprar todo</p>
+					<p>Hombres</p>
+					<p>Mujeres</p>
+			  	</div>
+			</div>
+			<div class="right">
+		  		<div class="right1">
+					<h2>Estamos en contacto</h2>
+					<p>quejas-sujerencias@dobleuso.mx</p>
+		  		</div>
+			</div>
+	  	</div>
+	</footer>
 
-
-
-    <script src="../Files/js/rya-contact.js"></script>
-</body>
+	<script src="Files/js/rya-contact.js"></script>
+	</body>
 </html>
