@@ -68,3 +68,8 @@ body{
 	font-weight: bold;
 	color: #fff;
 }
+
+.headerBottom div a{
+	text-decoration: none;
+	color: #fff;
+}
